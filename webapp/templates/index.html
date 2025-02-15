@@ -1,0 +1,449 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Laralink">
+  <!-- Page Title -->
+  <title>Raisul Islam</title>
+  <!-- Favicon Icon -->
+  <link rel="icon" href="{{configuration_obj.favicon.url}}" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/slick.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/lightgallery.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body id="home" class="st-get-sidebar">
+  <!-- Start Header Section -->
+  <header class="st-site-header st-style2 st-sticky-header">
+    <div class="st-main-header">
+      <div class="container">
+        <div class="st-main-header-in">
+          <div class="st-main-header-left">
+            <div class="st-header-author"><img src="{{configuration_obj.image_header.url}}" alt=""></div>
+          </div>
+          <div class="st-main-header-right">
+            <div class="st-nav">
+              <ul class="st-nav-list st-onepage-nav">
+                <li><a href="#home" class="st-smooth-move">Home</a></li>
+                <li><a href="#about" class="st-smooth-move">About</a></li>
+                <li><a href="#resume" class="st-smooth-move">Resume</a></li>
+                <li><a href="#projects" class="st-smooth-move">Projects</a></li>
+                <li><a href="#certifications" class="st-smooth-move">Certifications</a></li>
+                <li><a href="#contact" class="st-smooth-move">Contact</a></li>
+              </ul>
+              <div class="st-hero-btn">
+                <a href="#contact" class="st-btn st-style2 st-color1 st-btn-md st-smooth-move">Hire me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header Section -->
+
+  <!-- Start Hero Seciton -->
+  <section class="st-hero st-style2">
+    <div class="container">
+      <div class="st-hero-text">
+        <h1>Hi, I am <span>Raisul Islam</span></h1>
+        <p>I am a Software Engineer.</p>
+        <div class="st-hero-social-links">
+          {% comment %} <a href="#" class="st-social-btn">
+            <i class="fab fa-facebook-f"></i>
+          </a> {% endcomment %}
+          <a href="{{configuration_obj.linkedin}}" class="st-social-btn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="{{configuration_obj.github}}" class="st-social-btn">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="{{configuration_obj.facebook}}" class="st-social-btn">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="background-wrap">
+      <div class="bubble x1"></div>
+      <div class="bubble x2"></div>
+      <div class="bubble x3"></div>
+      <div class="bubble x4"></div>
+      <div class="bubble x5"></div>
+      <div class="bubble x6"></div>
+      <div class="bubble x7"></div>
+      <div class="bubble x8"></div>
+      <div class="bubble x9"></div>
+      <div class="bubble x10"></div>
+    </div>
+    <div id="particles-js"></div>
+  </section>
+  <!-- End Hero Seciton -->
+
+  <!-- Start About Seciton -->
+  <section id="about" class="st-about-wrap">
+    <div class="st-height-b100 st-height-lg-b80"></div>
+    <div class="container">
+      <div class="st-section-heading st-style1">
+        <h4 class="st-section-heading-title">ABOUT ME</h4>
+        <h2 class="st-section-heading-subtitle">ABOUT ME</h2>
+       
+          
+      </div>
+      <div class="st-height-b25 st-height-lg-b25"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 wow fadeInLeft">
+          <div class="st-about-img-wrap">
+            <div class="st-about-img st-dynamic-bg st-bg" data-src="{{about_obj.image.url}}"></div>
+          </div>
+          <div class="st-height-b0 st-height-lg-b30"></div>
+        </div>
+        <div class="col-lg-6">
+          <div class="st-vertical-middle">
+            <div class="st-vertical-middle-in">
+              <div class="st-text-block st-style1">
+                <h2 class="st-text-block-title">{{about_obj.heading}}</h2>
+                <h4 class="st-text-block-subtitle">{{about_obj.title}}</h4>
+                <div class="st-text-block-text">
+                  <p>{{about_obj.description}}</p>
+                </div>
+                <ul class="st-text-block-details st-mp0">
+                  <li><span>Birthday</span> : <span>March 18 1998</span></li>
+                  {% comment %} <li><span>Phone</span> : <span>+1 876-369-9009</span></li> {% endcomment %}
+                  <li><span>Email</span> : <span>{{about_obj.email}}</span></li>
+                  <li><span>From</span> : <span>{{about_obj.address}}</span></li>
+                  {% comment %} <li><span>Language</span> : <span>English, Germ</span></li> {% endcomment %}
+                 
+                </ul>
+                <div class="st-text-block-btn">
+                  <a href="{{configuration_obj.resume.url}}" class="st-btn st-style1 st-color1">Download CV</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Seciton -->
+
+  
+
+  <!-- Start project Seciton -->
+  <section id="projects">
+    <div class="container">
+        <div class="st-section-heading st-style1">
+            <br>
+            <h4 class="st-section-heading-title">PROJECTS</h4>
+            <h2 class="st-section-heading-subtitle">MY WORK</h2>
+        </div>
+
+        <div class="row">
+            {% for project in project_obj %} <!-- Show only first 3 projects -->
+            <div class="col-lg-4 col-md-6">
+                <div class="st-iconbox st-style1">
+                    <div class="st-iconbox-icon">
+                        <i class="{{ project.icon }}"></i> <!-- Dynamic icon class -->
+                    </div>
+                    <h2 class="st-iconbox-title">{{ project.name }}</h2> <!-- Project name -->
+                    <div class="st-iconbox-text">{{ project.description }}</div> <!-- Project description -->
+                    <a href="{{ project.link }}" class="st-btn st-style1 st-color1" target="_blank">View Project</a> <!-- Project link -->
+                </div>
+                <div class="st-height-b30 st-height-lg-b30"></div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  
+  <!-- End project Seciton -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Start Online Courses & Certifications Section -->
+<section id="certifications" class="st-dark-bg">
+    <div class="st-height-b100 st-height-lg-b80"></div>
+    <div class="container">
+      <div class="st-section-heading st-style1">
+        <h4 class="st-section-heading-title">Certifications</h4>
+        <h2 class="st-section-heading-subtitle">Online Courses & Achievements</h2>
+      </div>
+      <div class="st-height-b25 st-height-lg-b25"></div>
+    </div>
+  
+    <div class="container">
+      <div class="row">
+        {% for certificate in certificate_obj %} <!-- Limit to 10 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="st-single-certification text-center">
+            <div class="st-certification-image">
+              <img src="{{ certificate.image_certificate.url }}" alt="{{ certificate.name }}" class="img-fluid">
+            </div>
+            <h3 class="st-certification-title">{{ certificate.name }}</h3>
+          </div>
+          <div class="st-height-b30 st-height-lg-b20"></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  
+<!-- End Online Courses & Certifications Section -->
+
+
+
+  <!-- Start Resume Seciton -->
+  <section id="resume" class="st-dark-bg">
+    <div class="st-height-b100 st-height-lg-b80"></div>
+    <div class="container">
+      <div class="st-section-heading st-style1">
+        <h4 class="st-section-heading-title">RESUME</h4>
+        <h2 class="st-section-heading-subtitle">RESUME</h2>
+      </div>
+      <div class="st-height-b25 st-height-lg-b25"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <!-- Experience -->
+        <div class="col-lg-6">
+          <div class="st-resume-wrap">
+            <div class="st-resume-heading">
+              <img src="{% static 'img/icon/resume-icon1.png' %}" alt="resume-icon">
+              <h2 class="st-resume-heading-title">Experience</h2>
+            </div>
+
+            <div class="st-height-b50 st-height-lg-b30"></div>
+
+            <div class="st-resume-timeline-wrap">
+              {% for experience in experiences %}
+              <div class="st-resume-timeline">
+                  <h3 class="st-resume-timeline-title">{{ experience.designation }}</h3>
+                  <div class="st-resume-timeline-duration">{{ experience.get_duration }}</div>
+                  <h4 class="st-resume-timeline-subtitle">{{ experience.company }}</h4>
+                  <div class="st-resume-timeline-text">
+                      <!-- Add additional details if needed -->
+                  </div>
+              </div>
+              <div class="st-height-b50 st-height-lg-b30"></div>
+              {% endfor %}
+          </div>
+          
+
+
+
+
+
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="col-lg-6">
+
+          <div class="st-height-b0 st-height-lg-b50"></div>
+          <div class="st-resume-wrap">
+            <div class="st-resume-heading">
+              <img src="{% static 'img/icon/resume-icon2.png' %}" alt="resume-icon">
+              <h2 class="st-resume-heading-title">Education</h2>
+            </div>
+            <div class="st-height-b50 st-height-lg-b30"></div>
+
+            <div class="st-resume-timeline-wrap">
+              <div class="st-resume-timeline">
+                <h3 class="st-resume-timeline-title">B.Sc. in CSE</h3>
+                <div class="st-resume-timeline-duration">2018 - 2022</div>
+                <h4 class="st-resume-timeline-subtitle">United International University (UIU)</h4>
+                {% comment %} <div class="st-resume-timeline-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                    ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis.</p>
+                </div> {% endcomment %}
+              </div> <!-- st-resume-timeline -->
+              <div class="st-height-b50 st-height-lg-b30"></div>
+              <div class="st-resume-timeline">
+                <h3 class="st-resume-timeline-title"> Higher Secondary Certificate (HSC)</h3>
+                <div class="st-resume-timeline-duration">2016</div>
+                <h4 class="st-resume-timeline-subtitle">Dhaka Residential Model College</h4>
+                {% comment %} <div class="st-resume-timeline-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                    ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis.</p>
+                </div> {% endcomment %}
+              </div> <!-- st-resume-timeline -->
+              <div class="st-height-b50 st-height-lg-b30"></div>
+              <div class="st-resume-timeline">
+                <h3 class="st-resume-timeline-title">Secondary School Certificate (SSC)</h3>
+                <div class="st-resume-timeline-duration">2014</div>
+                <h4 class="st-resume-timeline-subtitle">Dhaka Residential Model College</h4>
+                {% comment %} <div class="st-resume-timeline-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                    ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis.</p>
+                </div> {% endcomment %}
+              </div> <!-- st-resume-timeline -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="st-height-b100 st-height-lg-b80"></div>
+  </section>
+  <!-- End Resume Seciton -->
+
+  
+
+  <!-- Start Contact Seciton -->
+  <section id="contact" class="st-dark-bg">
+    <div class="st-height-b100 st-height-lg-b80"></div>
+    <div class="container">
+      <div class="st-section-heading st-style1">
+        <h4 class="st-section-heading-title">CONTACT ME</h4>
+        <h2 class="st-section-heading-subtitle">CONTACT ME</h2>
+      </div>
+      <div class="st-height-b25 st-height-lg-b25"></div>
+    </div>
+
+    <!-- Contact Container -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="st-contact-title">Just say Hello</h3>
+          <div id="st-alert"></div>
+
+          <div id="st-alert">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-success">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+
+          <form action="{% url 'contact' %}" method="POST" class="st-contact-form">
+            {% csrf_token %}
+            <div class="st-form-field">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="st-form-field">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="st-form-field">
+                <input type="text" name="subject" placeholder="Your Subject" required>
+            </div>
+            <div class="st-form-field">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button class="st-btn st-style1 st-color1" type="submit">Send Message</button>
+        </form>
+        
+
+
+
+
+        </div>
+        <div class="st-height-b0 st-height-lg-b30"></div>
+
+        <div class="col-lg-6">
+          <div class="st-height-b0 st-height-lg-b40"></div>
+          <h3 class="st-contact-title">Contact Info</h3>
+          {% comment %} <div class="st-contact-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla tincidunt id faucibus sed
+            suscipit feugiat.
+          </div> {% endcomment %}
+          <div class="st-contact-info-wrap">
+            <div class="st-single-contact-info">
+              <i class="fas fa-envelope"></i>
+              <div class="st-single-info-details">
+                <h4>Email</h4>
+                <a href="#">r072islam@gmail.com.com</a>
+                
+              </div>
+            </div>
+            {% comment %} <div class="st-single-contact-info">
+              <i class="fas fa-phone-alt"></i> {% endcomment %}
+              {% comment %} <div class="st-single-info-details">
+                <h4>Phone</h4>
+                <span>+1 876-369-9009</span>
+                <span>+1 213-519-1786</span>
+              </div> {% endcomment %}
+            </div>
+            <div class="st-single-contact-info">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="st-single-info-details">
+                <h4>Address</h4>
+                <span>{{about_obj.address}}</span>
+              </div>
+            </div>
+            <div class="st-social-info">
+              <div class="st-social-text">Visit my social profile and get connected</div>
+              <div class="st-social-link">
+                <a href="{{configuration_obj.github}}" class="st-social-btn">
+                  <span class="st-social-icon"><i class="fab fa-github"></i></span>
+                  <span class="st-icon-name">Github</span>
+                </a>
+                <a href="{{configuration_obj.facebook}}" class="st-social-btn">
+                  <span class="st-social-icon"><i class="fab fa-facebook"></i></span>
+                  <span class="st-icon-name">Facebook</span>
+                </a>
+                
+                
+                <a href="{{configuration_obj.linkedin}}" class="st-social-btn">
+                  <span class="st-social-icon"><i class="fab fa-linkedin"></i></span>
+                  <span class="st-icon-name">LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="st-height-b100 st-height-lg-b80"></div>
+  </section>
+  <!-- End Contact Seciton -->
+
+  <!-- Start Footer Seciton -->
+  <footer>
+    <div class="container">
+      <div class="st-copyright-wrap text-center">
+        <div class="st-copyright-text">© 2023. Designed by Raisul Islam. All right reserved.</div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Seciton -->
+
+  <!-- Scripts -->
+  <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+  <script src="{% static 'js/jquery.slick.min.js' %}"></script>
+  <script src="{% static 'js/lightgallery.min.js' %}"></script>
+  <script src="{% static 'js/wow.min.js' %}"></script>
+  <script src="{% static 'js/particles.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+<!-- Mirrored from davis-html.netlify.app/index2 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Feb 2025 16:10:50 GMT -->
+</html>

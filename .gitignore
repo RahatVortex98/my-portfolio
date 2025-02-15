@@ -1,0 +1,13 @@
+# Ignore Python/Django files
+venv/
+__pycache__/
+db.sqlite3
+*.pyc
+*.log
+
+# Static & media files
+static/
+media/
+
+# Environment variables
+.env
